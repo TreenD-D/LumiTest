@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LumiTest</string>
+
+    <!-- Common system messages -->
+    <string name="double_back_to_exit">Press one more time to exit</string>
+    <string name="please_wait">Loading…</string>
+    <string name="security_error">Required permissions missing</string>
+    <string name="unknown_error">Unknown error occurred</string>
+    <string name="server_not_available_error">Server is temporarily unavailable</string>
+    <string name="network_error">No network connection</string>
+    <string name="not_found_error">Not found</string>
+    <string name="forbidden_error">Action unavailable</string>
+    <string name="unauthorized_error">Authrorization required</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="bad_request_error">Bad request</string>
+    <string name="message_server_unavailable">Server unavailable. Please retry later</string>
+    <string name="message_technical_works">Maintenance</string>
+    <string name="message_update_available">Update available</string>
+    <string name="message_update_required">Update required</string>
+    <string name="close_app">Close the app</string>
+    <string name="open_google_play">Go to Google Play</string>
+    <string name="continue_without_updating">Proceed without update</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_back">Back</string>
+    <string name="write_on_email">Send to email</string>
+    <string name="open_folder">Open folder</string>
+    <string name="open_file">Open file</string>
+    <string name="share">Share</string>
+
+    <!-- App strings section -->
+
+</resources>
