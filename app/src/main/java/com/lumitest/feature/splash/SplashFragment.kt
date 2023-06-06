@@ -2,6 +2,7 @@ package com.lumitest.feature.splash
 
 import android.os.Bundle
 import android.view.View
+import com.lumitest.Screens
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -28,8 +29,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
         //     ANIMATION_DURATION_MS / 2
         // )
 
-        // Navigate to the next screen
-        // navigation.newRootFlow(Screens.Flow.navigation())
+         navigation.newRootFlow(Screens.Flow.addressInput())
     }
 
     private fun startFirstAnimation() {

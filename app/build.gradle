@@ -145,4 +145,7 @@ dependencies {
 
     // Language
     implementation "com.github.YarikSOffice:lingver:1.3.0"
+
+    // Bouncy Castle library
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.70'
 }

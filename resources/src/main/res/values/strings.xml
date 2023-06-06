@@ -28,5 +28,7 @@
     <string name="share">Share</string>
 
     <!-- App strings section -->
-
+    <string name="load_transactions">Load transactions</string>
+    <string name="address_not_valid">Not a valid ETH address</string>
+    <string name="address_hint">ETH wallet address</string>
 </resources>

@@ -6,14 +6,18 @@ import com.lumitest.feature.splash.SplashFlowFragment
 import com.lumitest.feature.splash.SplashFragment
 import pro.appcraft.lib.navigation.getFragmentScreen
 import com.github.terrakok.cicerone.androidx.ActivityScreen
+import com.lumitest.feature.verifyaddress.VerifyAddressFlowFragment
+import com.lumitest.feature.verifyaddress.VerifyAddressFragment
 
 object Screens {
     object Flow {
         fun splash() = SplashFlowFragment::class.getFragmentScreen()
+        fun addressInput() = VerifyAddressFlowFragment::class.getFragmentScreen()
     }
 
     object Screen {
         fun splash() = SplashFragment::class.getFragmentScreen()
+        fun addressInput() = VerifyAddressFragment::class.getFragmentScreen()
     }
 
     // External action intents
