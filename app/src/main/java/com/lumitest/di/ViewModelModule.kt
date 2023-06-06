@@ -5,10 +5,11 @@ import org.koin.dsl.module
 import com.lumitest.feature.AppViewModel
 import com.lumitest.feature.splash.SplashViewModel
 import com.lumitest.global.viewmodel.NavigationViewModel
+import org.koin.androidx.viewmodel.dsl.viewModelOf
 
 internal val viewModelModule = module {
-    viewModel { NavigationViewModel(get()) }
-    viewModel { AppViewModel() }
+    viewModelOf(::NavigationViewModel)
+    viewModelOf(::AppViewModel)
 
-    viewModel { SplashViewModel(get(), get(), get()) }
+    viewModelOf(::SplashViewModel)
 }
