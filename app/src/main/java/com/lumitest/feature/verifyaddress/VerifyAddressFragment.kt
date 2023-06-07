@@ -7,6 +7,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.lumitest.R
+import com.lumitest.Screens
 import com.lumitest.databinding.FragmentVerifyaddressBinding
 import com.lumitest.global.ui.fragment.BaseFragment
 import com.lumitest.global.utils.BindingProvider
@@ -35,7 +36,7 @@ class VerifyAddressFragment : BaseFragment<FragmentVerifyaddressBinding>() {
             }
 
             loadTransactionsButton.setOnClickListener {
-                viewModel.proceed()
+                navigation.navigateTo(Screens.Screen.transactionsList(addressEditText.text.toString()))
             }
 
 

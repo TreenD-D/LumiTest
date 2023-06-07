@@ -31,4 +31,11 @@
     <string name="load_transactions">Load transactions</string>
     <string name="address_not_valid">Not a valid ETH address</string>
     <string name="address_hint">ETH wallet address</string>
+    <string name="refresh_transactions">Refresh transactions</string>
+    <string name="error">Error loading transactions</string>
+    <string name="tx_from" formatted="true">From: %1$s</string>
+    <string name="tx_to" formatted="true">To: %1$s</string>
+    <string name="ETH_value" formatted="true">%1$s ETH</string>
+    <string name="incoming">Incoming</string>
+    <string name="outgoing">Outgoing</string>
 </resources>

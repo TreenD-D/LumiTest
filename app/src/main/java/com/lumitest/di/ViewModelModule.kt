@@ -5,6 +5,7 @@ import com.lumitest.feature.AppViewModel
 import com.lumitest.feature.splash.SplashViewModel
 import com.lumitest.global.viewmodel.NavigationViewModel
 import com.lumitest.feature.verifyaddress.VerifyAddressViewModel
+import com.lumitest.feature.transactionslist.TransactionsListViewModel
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 
 internal val viewModelModule = module {
@@ -13,4 +14,5 @@ internal val viewModelModule = module {
 
     viewModelOf(::SplashViewModel)
     viewModelOf(::VerifyAddressViewModel)
+    viewModelOf(::TransactionsListViewModel)
 }

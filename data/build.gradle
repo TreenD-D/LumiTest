@@ -6,17 +6,23 @@ plugins {
 }
 
 android {
+
+    defaultConfig {
+        //should not be located here in real app, just for ease of testing build
+        buildConfigField "String", "ETH_API_KEY", '"MHF9TQB41FBC1QTHPJR47TKH4J1XWAP8T1"'
+    }
+
     buildTypes {
         debug {
-            buildConfigField 'String', 'API_ENDPOINT', '"https://example.com/"' // debug server
+            buildConfigField 'String', 'API_ENDPOINT', '"https://api.etherscan.io/"' // debug server
         }
         staging {
             consumerProguardFiles 'proguard-rules.pro'
-            buildConfigField 'String', 'API_ENDPOINT', '"https://example.com/"' // stage server
+            buildConfigField 'String', 'API_ENDPOINT', '"https://api.etherscan.io/"' // stage server
         }
         release {
             consumerProguardFiles 'proguard-rules.pro'
-            buildConfigField 'String', 'API_ENDPOINT', '"https://example.com/"' // release server
+            buildConfigField 'String', 'API_ENDPOINT', '"https://api.etherscan.io/"' // release server
         }
     }
 }

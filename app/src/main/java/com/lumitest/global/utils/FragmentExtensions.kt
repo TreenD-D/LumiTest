@@ -60,6 +60,18 @@ inline fun Fragment.buildDatePicker(
     }
 }
 
+inline fun <reified T : Any?> Fragment.argument(key: String): Lazy<T> {
+    return lazy(LazyThreadSafetyMode.NONE) {
+        requireArguments().get(key) as T
+    }
+}
+
+inline fun <T : Fragment> T.withArgs(vararg args: Pair<String, *>): T {
+    return this.apply {
+        arguments = bundleOf(*args)
+    }
+}
+
 @TargetApi(Build.VERSION_CODES.N)
 fun Fragment.appLocale() = if (isApiAtLeast(Build.VERSION_CODES.N))
     resources.configuration.locales[0]

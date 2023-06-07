@@ -53,9 +53,6 @@ class VerifyAddressViewModel(
         return true
     }
 
-    fun proceed() {
-
-    }
 }
 
 

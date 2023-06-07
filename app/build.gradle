@@ -88,7 +88,7 @@ dependencies {
     // Desugaring
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$desugaringVersion"
 
-    // AppCraft utils
+    // AppCraft utils, using just to speed up the task, some of this are unused, some to be replaced by Arrow or project extensions
     implementation 'com.github.AppCraftTeam:common-utils-android:1.0.8'
     implementation 'com.github.AppCraftTeam:pagination-utils-android:2.0.1'
     implementation 'com.github.AppCraftTeam:navigation-utils-android:2.0.2'

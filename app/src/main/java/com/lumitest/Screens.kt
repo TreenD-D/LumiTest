@@ -6,6 +6,7 @@ import com.lumitest.feature.splash.SplashFlowFragment
 import com.lumitest.feature.splash.SplashFragment
 import pro.appcraft.lib.navigation.getFragmentScreen
 import com.github.terrakok.cicerone.androidx.ActivityScreen
+import com.lumitest.feature.transactionslist.TransactionsListFragment
 import com.lumitest.feature.verifyaddress.VerifyAddressFlowFragment
 import com.lumitest.feature.verifyaddress.VerifyAddressFragment
 
@@ -18,6 +19,10 @@ object Screens {
     object Screen {
         fun splash() = SplashFragment::class.getFragmentScreen()
         fun addressInput() = VerifyAddressFragment::class.getFragmentScreen()
+
+        fun transactionsList(walletAddress: String) = TransactionsListFragment::class.getFragmentScreen(
+            TransactionsListFragment.KEY_WALLED_ADDRESS to walletAddress
+        )
     }
 
     // External action intents
